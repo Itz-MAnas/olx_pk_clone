@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-body {
+    max-width: 100%;
+    height: auto;
+
+    /* border: 2px solid red; */
+}
+
+
+/****************************** Header ******************************/
+.header {
+    max-width: 100%;
+    height: auto;
+    /* border: 2px solid blue; */
+
+    background-color: #F7F8F9;
+
+    position: sticky;
+    top: 0px;
+
+}
+
+.header-content {
+    height: auto;
+    max-width: 90%;
+    /* border: 1px solid red; */
+
+    margin: 0px 110px 0 110px;
+    padding-top: 10px;
+}
+
+/******************************* Upper Header *******************************/
+.upper-header {
+    height: auto;
+    max-width: 100%;
+    /* border: 1px solid rgb(38, 0, 255); */
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.motors {
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.motors:hover {
+    color: #3A77FF;
+    cursor: pointer;
+}
+.property {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.property:hover {
+    color: #3A77FF;
+    cursor: pointer;
+}
+
+/******************************* Lower Header *******************************/
+.lower-header {
+    height: auto;
+    max-width: 100%;
+    /* border: 1px solid rgb(72, 255, 0); */
+    padding: 20px 0 10px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.location {
+    border: 2px solid #000000;
+
+    background-color: #ffffff;
+    width: 22%;
+    height: 50px;
+
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.location:focus-within{
+    border: 2px solid #23e5db;
+}
+
+.location > input {
+    width: 90%;
+    height: 100%;
+    margin-left: 40px;
+
+    border: none;
+    appearance: none;
+    outline: none;
+}
+.location > input::placeholder{
+    font-size: 1.2em;
+}
+.location > img {
+    position: absolute;
+}
+.location > img:first-child {
+    margin-left: 10px;
+}
+.location > img:last-child {
+    margin-left: 200px;
+}
+
+
+
+.search {
+
+    background-color: #ffffff;
+    width: 55%;
+    height: 50px;
+
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+}
+.search > input {
+    width: 94%;
+    height: 100%;
+    appearance: none;
+    outline: none;
+}
+.search > input:focus-within{
+    border: 2px solid #23e5db;
+}
+.search > input::placeholder{
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+.search > button {
+    width: 6%;
+    height: 100%;
+    background-color: #002F34;
+}
+
+.search > button:hover {
+    cursor: pointer;
+}
+
+.login {
+    font-weight: 700;
+    font-size: 1em;
+    color: #002F34;
+
+    border-bottom: 2px solid #002f34;
+}
+
+.login:hover {
+    border-bottom: none;
+    cursor: pointer;
+}
+
+
+.sell {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sell:hover{
+    cursor: pointer;
+}
+
+.sell > .plus-icon {
+    position: absolute;
+
+    margin-right: 30px;
+}
+
+.sell > span {
+    position: absolute;
+    font-weight: 700;
+    font-size: 0.9em;
+
+    margin-right: -15px;
+    
+}
+
+/******************************* Category *******************************/
+
+.category-header{
+    max-width: 100%;
+    height: auto;
+    /* border: 2px solid green; */
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px 0px;
+}
+
+.category-content {
+    max-width: 90%;
+    height: auto;
+    /* border: 2px solid red; */
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin: 0px 110px 0px 110px;
+    padding: 12px 12px 12px 12px;
+}
+
+.all-category {
+    height: auto;
+    width: 11%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.all-category > span {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #002F34;
+}
+.all-category:hover{
+    cursor: pointer;
+}
+
+.category-content > a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #002F34;
+}
+
+.category-content > a:hover {
+    color: #00A49F;
+}
+
+/******************************* Banner *******************************/
+
+.banner{
+    height: auto;
+    width: 100%;
+    /* border: 2px solid black; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner1 {
+    height: auto;
+    width: 90% ;
+    /* border: 2px solid rgb(160, 58, 255); */
+
+    margin: 20px 0px 0px 0px;
+}
+
+/******************************* All Cateogies *******************************/
+
+.categories {
+    height: auto;
+    max-width: 100%;
+    /* border: 2px solid blue; */
+
+    display: flex;
+    justify-content: center;
+}
+
+.all-categories {
+    height: auto;
+    width: 90% ;
+    /* border: 2px solid rgb(160, 58, 255); */
+
+}
+.category-name{
+    height: auto;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin: 20px 0px 20px 0px;
+}
+.category-name > span {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #002F34;
+}
+
+
+
+.category-icons {
+    height: auto;
+    width: 100%;
+    /* border: 2px solid green; */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+}
+
+.category-icons > .mobiles, .vehicles, .property-for-sale, .property-for-rent, .electronics-home-appliances, .bikes, .business-industrial-agriculture, .services, .jobs, .animals, .furniture-home-decor, .fashion-beauty, .books-sports-hobbies, .kids {
+    height: auto;
+    width: 8.2%;
+    /* border: 2px solid red; */
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-icons > .mobiles > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.category-icons > .vehicles > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+.category-icons > .property-for-sale > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.category-icons > .property-for-rent > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.category-icons > .electronics-home-appliances > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.category-icons > .bikes > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.category-icons > .business-industrial-agriculture > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.category-icons > .services > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.category-icons > .jobs > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.category-icons > .animals > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+.category-icons > .furniture-home-decor > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+.category-icons > .fashion-beauty > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+.category-icons > .books-sports-hobbies > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+.category-icons > .kids > span {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+
+/************ Mobile Phones, Cars, Bikes, Houses, Videos&Audios, Tablets, Lands & Plots, Jobs Section ***********/
+
+.mobile-phones, .cars, .bike, .houses, .video-audios, .tablets, .lands-plots, .job {
+    height: auto;
+    width: 100%;
+    /* border: 2px solid red; */
+
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-content {
+    height: auto;
+    width: 90% ;
+    /* border: 2px solid rgb(160, 58, 255); */
+
+    margin: 40px 0px 10px 0px;
+}
+
+.cars-content, .bike-content, .houses-content, .video-audios-content, .tablets-content, .lands-plots-content, .job-content {
+    height: auto;
+    width: 90% ;
+    /* border: 2px solid rgb(160, 58, 255); */
+
+    margin: 10px 0px 10px 0px;
+}
+
+.mobile-title, .cars-title, .bike-title, .houses-title, .video-audios-title, .tablets-title, .lands-plots-title, .job-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #002F34;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-arrow > a {
+    text-decoration: none;
+    font-size: 0.7em;
+    color: #3A77FF;
+}
+
+.mobile-images, .cars-images, .bike-images, .houses-images, .video-audios-images, .tablets-images, .lands-plots-images, .job-images {
+    height: auto;
+    width: 100%;
+    /* border: 2px solid green; */
+
+    margin: 20px 0px 20px 0px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.img {
+    height: auto;
+    width: 24%;
+
+    border: 2px solid #d1d1d1 ;
+
+    border-radius: 5px;
+}
+
+.img > img {
+    height: auto;
+    width: 100%;
+
+    border-radius: 5px 5px 0 0;
+}
+
+.img-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 10px 0px 10px 10px;
+}
+
+.img-content > img {
+    position: absolute;
+    margin-left: 17.5%;
+    z-index: -1;
+}
+
+.img-content > span {
+    font-size: 1em;
+}
+
+.img-content > span:first-child {
+    font-weight: 700;
+}
+.img-content > span:nth-child(4) {
+    font-size: 0.9em;
+}
+.img-content > span:last-child {
+    font-size: 0.8em;
+}
+
+
+
+/******************************* OLX APP *******************************/
+
+.app {
+    height: auto;
+    width: 100%;
+    /* border: 2px solid red; */
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #F7F8F9;
+
+    margin: 50px 0px 0px 0px;
+
+    border-bottom: 2px solid #c4c4c4;
+}
+
+.olx-app {
+    height: auto;
+    width: 90% ;
+    /* border: 2px solid rgb(160, 58, 255); */
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.app-content {
+    height: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+.app-content > h1 {
+    font-size: 2em;
+    font-weight: 800;
+    color: #002F34;
+    text-transform: uppercase;
+}
+
+.app-content > span {
+    font-size: 1.3em;
+    color: #002F34;
+}
+
+.empty {
+    height: 70%;
+    width: 0%;
+    border: 2px solid #c4c4c4;
+}
+
+.app-links {
+    height: auto;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.app-link-text > p {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.app-links-img {
+    display: flex;
+    gap: 8px;
+    height: auto;
+    width: 100%;
+}
+
+.app-links-img > img:hover {
+    cursor: pointer;
+}
+
+
+/******************************* FOOTER *******************************/
+
+.footer {
+    height: auto;
+    width: 100%;
+    /* border: 2px solid red; */
+
+
+    background-color: #EBEEEF;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 20px 0 70px 0 ;
+}
+
+.footer-content {
+    height: auto;
+    width: 90% ;
+    /* border: 2px solid rgb(160, 58, 255); */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.popular-categories, .trending-searches, .about-us, .olx, .follow-us{
+    height: auto;
+    width: 20%;
+    /* border: 2px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.popular-categories > span:first-child, .trending-searches > span:first-child, .about-us > span:first-child, .olx > span:first-child{
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #002F34;
+}
+
+.popular-categories > ul > li, .trending-searches > ul > li, .about-us > ul > li, .olx > ul > li {
+    list-style: none;
+    font-size: 0.8em;
+    color: #888888;
+    line-height: 23px;
+}
+.popular-categories > ul > li > span:hover, .trending-searches > ul > li > span:hover, .about-us > ul > li:hover, .olx > ul > li:hover {
+    cursor: pointer;
+    color: #002F34;
+}
+
+.follow-us > span {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #002F34;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.social-icons > img:hover {
+    cursor: pointer;
+}
+
+.app-download {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.app-download > img:hover {
+    cursor: pointer;
+}
+
+
+/******************************* COPYRIGHT *******************************/
+
+.copyright {
+    height: auto;
+    width: 100%;
+
+    /* border: 2px solid red; */
+
+    background-color: #002F34;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 16px 0 16px 0;
+}
+
+.copyright-content {
+    height: auto;
+    width: 90%;
+    /* border: 2px solid greenyellow; */
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.copyright-content > span:first-child {
+    color: #ffffff;
+    font-size: 0.78em;
+    font-weight: 700;
+}
+.copyright-content > span:last-child {
+    color: #ffffff;
+    font-size: 0.78em;
+}
